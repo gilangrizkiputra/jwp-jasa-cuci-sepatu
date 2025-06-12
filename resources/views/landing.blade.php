@@ -1,6 +1,6 @@
 @extends('layouts.landing')
 
-@section('title', 'Landing Page')
+@section('title', 'Jasa Cuci Sepatu')
 
 @if (session('success'))
   <div id="popupAlert" class="position-fixed top-0 start-50 translate-middle-x mt-3 alert alert-success shadow" style="z-index: 9999;">
@@ -15,7 +15,7 @@
         alert.style.opacity = '0';
         setTimeout(() => alert.remove(), 500);
       }
-    }, 3000); // 3 detik
+    }, 3000);
   </script>
 @endif
 

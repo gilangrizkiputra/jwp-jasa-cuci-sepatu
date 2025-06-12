@@ -65,7 +65,9 @@
 
  {{-- Navbar --}}
 <nav class="d-flex justify-content-between align-items-center px-4 py-3 bg-primary" style="height: 70px;">
-  <div class="fw-bold text-white">JCS</div>
+  <div class="fw-bold text-white">
+    <a href="{{ url('/') }}" class="text-white text-decoration-none fw-bold">JCS</a>
+  </div>
   <div class="d-flex gap-3">
     <a href="{{ url('/') }}" class="text-white text-decoration-none fw-bold">Beranda</a>
     <a href="{{ route('about') }}" class="text-white text-decoration-none fw-bold">Tentang Kami</a>
