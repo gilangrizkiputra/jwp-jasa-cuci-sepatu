@@ -70,6 +70,7 @@
   </div>
   <div class="d-flex gap-3">
     <a href="{{ url('/') }}" class="text-white text-decoration-none fw-bold">Beranda</a>
+    <a href="{{ route('orders.check') }}" class="text-white text-decoration-none fw-bold">Cek Status</a>
     <a href="{{ route('about') }}" class="text-white text-decoration-none fw-bold">Tentang Kami</a>
     <a href="{{ route('login') }}" class="text-white text-decoration-none fw-bold">Login</a>
   </div>

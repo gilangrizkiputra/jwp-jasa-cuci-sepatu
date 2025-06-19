@@ -49,3 +49,6 @@ Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('/cek-status', [OrderController::class, 'checkStatus'])->name('orders.check');
+Route::post('/cek-status', [OrderController::class, 'showStatus'])->name('orders.showStatus');

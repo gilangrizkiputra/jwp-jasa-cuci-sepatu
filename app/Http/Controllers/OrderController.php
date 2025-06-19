@@ -49,4 +49,20 @@ class OrderController extends Controller
 
         return redirect('/')->with('success', 'Pesanan berhasil dikirim.');
     }
+
+    public function checkStatus()
+    {
+        return view('orders.check');
+    }
+
+    public function showStatus(Request $request)
+    {
+        $request->validate([
+            'email_pemesan' => 'required|email',
+        ]);
+
+        $orders = \App\Models\Order::where('email_pemesan', $request->email_pemesan)->with('catalog')->get();
+
+        return view('orders.check', compact('orders'))->with('email', $request->email_pemesan);
+    }
 }
